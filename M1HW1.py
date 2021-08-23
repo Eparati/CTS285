@@ -32,5 +32,23 @@ def adder():
         num1 = float(input("Enter a number: "))
         num2 = float(input("Enter a second number: "))
         sumNum = num1+num2
-        sumSelect = int(input("Enter 1 to repeat, or any other number to return to main menu."))
-    
+        print("The sum of your numbers is: ",sumNum)
+        sumSelect = int(input("Enter 1 to repeat, or any other number to return to main menu.\n"))
+        if sumSelect == 1:
+            print("Repeating..")
+        else:
+            repeaterSum = False
+def subtractor():
+    repeaterDiff=True
+    while repeaterDiff == True:
+        print("Your first number will be subtracted by your second number. Example: 3 - 2 = 1 ")
+        num1 = float(input("Enter a number: "))
+        num2 = float(input("Enter a second number: "))
+        diffNum = num1-num2
+        print("The sum of your numbers is: ",diffNum)
+        sumSelect = int(input("Enter 1 to repeat, or any other number to return to main menu.\n"))
+        if sumSelect == 1:
+            print("Repeating..")
+        else:
+            repeaterDiff = False
+main()
